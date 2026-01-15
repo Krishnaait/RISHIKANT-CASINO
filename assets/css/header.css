@@ -1,0 +1,232 @@
+/**
+ * Header & Navigation Styles
+ */
+
+/* Header Container */
+.header {
+    background: rgba(26, 10, 46, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 215, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+/* Logo */
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.logo-icon {
+    font-size: 32px;
+    display: inline-block;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffd700;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.logo a:hover .logo-text {
+    text-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
+}
+
+/* Navigation Menu */
+.nav {
+    flex: 1;
+    margin: 0 32px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    align-items: center;
+}
+
+.nav-menu a {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #ffd700;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffd700;
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+/* Mobile Navigation Toggle */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.nav-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #ffd700;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Balance Display */
+.balance-display {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255, 215, 0, 0.1);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-radius: 8px;
+    padding: 8px 16px;
+    white-space: nowrap;
+}
+
+.balance-label {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.balance-amount {
+    color: #ffd700;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.balance-currency {
+    font-size: 20px;
+}
+
+/* Compliance Banner */
+.compliance-banner {
+    background: rgba(255, 215, 0, 0.1);
+    border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+    padding: 12px 0;
+}
+
+.compliance-banner p {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.5;
+}
+
+.compliance-banner strong {
+    color: #ffd700;
+}
+
+/* Main Content */
+.main-content {
+    min-height: calc(100vh - 200px);
+}
+
+/* Responsive Design */
+@media (max-width: 1023px) {
+    .header-content {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .nav {
+        margin: 0 16px;
+        order: 3;
+        width: 100%;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 16px;
+        display: none;
+        width: 100%;
+        background: rgba(26, 10, 46, 0.98);
+        padding: 16px 0;
+        border-top: 1px solid rgba(255, 215, 0, 0.2);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: flex;
+        order: 2;
+    }
+
+    .balance-display {
+        order: 1;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-text {
+        font-size: 18px;
+    }
+
+    .logo-icon {
+        font-size: 24px;
+    }
+
+    .nav {
+        margin: 0;
+    }
+
+    .nav-menu {
+        gap: 12px;
+    }
+
+    .nav-menu a {
+        font-size: 14px;
+    }
+
+    .balance-display {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .balance-amount {
+        font-size: 16px;
+    }
+
+    .balance-currency {
+        font-size: 16px;
+    }
+
+    .compliance-banner p {
+        font-size: 12px;
+    }
+}

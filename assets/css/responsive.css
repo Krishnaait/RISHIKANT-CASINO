@@ -1,0 +1,558 @@
+/**
+ * Responsive Design Styles
+ * Mobile-first approach with breakpoints for tablet and desktop
+ */
+
+/* ============================================
+   TABLET BREAKPOINT (768px - 1023px)
+   ============================================ */
+
+@media (max-width: 1023px) {
+    /* Typography */
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    /* Grid Layouts */
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Cards */
+    .card {
+        padding: 20px;
+    }
+
+    /* Sections */
+    .section {
+        padding: 48px 16px;
+    }
+
+    /* Container */
+    .container {
+        padding: 0 16px;
+    }
+
+    /* Flexbox adjustments */
+    .flex-between {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    /* Button sizing */
+    button, .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* Form elements */
+    input, select, textarea {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+}
+
+/* ============================================
+   MOBILE BREAKPOINT (320px - 767px)
+   ============================================ */
+
+@media (max-width: 767px) {
+    /* Root font sizes */
+    :root {
+        --font-size-h1: 28px;
+        --font-size-h2: 22px;
+        --font-size-h3: 18px;
+        --font-size-body: 14px;
+        --font-size-small: 11px;
+        --spacing-lg: 16px;
+        --spacing-xl: 24px;
+        --spacing-2xl: 32px;
+    }
+
+    /* Body */
+    body {
+        font-size: 14px;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    h2 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    /* Container and sections */
+    .container {
+        padding: 0 12px;
+    }
+
+    .section {
+        padding: 32px 12px;
+    }
+
+    /* Cards */
+    .card {
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+
+    /* Grid layouts */
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    /* Flexbox */
+    .flex-between {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .flex-col {
+        gap: 12px;
+    }
+
+    /* Buttons */
+    button, .btn {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    button:last-child, .btn:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Form elements */
+    input, select, textarea {
+        width: 100%;
+        padding: 10px 12px;
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    label {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    /* Age gate modal */
+    .age-gate-modal {
+        padding: 12px;
+    }
+
+    .age-gate-content {
+        margin: 12px;
+        padding: 16px;
+        max-width: 100%;
+    }
+
+    .age-gate-content h2 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .age-gate-content p {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .age-gate-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .age-gate-buttons button {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    /* Alerts */
+    .alert {
+        padding: 12px;
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    /* Compliance box */
+    .compliance-box {
+        padding: 12px;
+        margin: 12px 0;
+    }
+
+    .compliance-box h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .compliance-box p {
+        font-size: 13px;
+    }
+
+    /* Spacing utilities */
+    .mt-sm { margin-top: 4px; }
+    .mt-md { margin-top: 8px; }
+    .mt-lg { margin-top: 12px; }
+    .mt-xl { margin-top: 16px; }
+
+    .mb-sm { margin-bottom: 4px; }
+    .mb-md { margin-bottom: 8px; }
+    .mb-lg { margin-bottom: 12px; }
+    .mb-xl { margin-bottom: 16px; }
+
+    .p-sm { padding: 4px; }
+    .p-md { padding: 8px; }
+    .p-lg { padding: 12px; }
+    .p-xl { padding: 16px; }
+
+    /* Text alignment */
+    .text-center {
+        text-align: center;
+    }
+
+    .text-left {
+        text-align: left;
+    }
+
+    .text-right {
+        text-align: right;
+    }
+
+    /* Tables */
+    table {
+        font-size: 12px;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    /* Lists */
+    ul, ol {
+        margin-left: 16px;
+        margin-bottom: 12px;
+    }
+
+    li {
+        margin-bottom: 6px;
+    }
+
+    /* Images */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Blockquotes */
+    blockquote {
+        margin: 12px 0;
+        padding: 12px;
+        border-left: 3px solid #ffd700;
+        font-size: 13px;
+    }
+
+    /* Code blocks */
+    code, pre {
+        font-size: 12px;
+        overflow-x: auto;
+    }
+
+    /* Horizontal rule */
+    hr {
+        margin: 16px 0;
+    }
+}
+
+/* ============================================
+   SMALL MOBILE (320px - 480px)
+   ============================================ */
+
+@media (max-width: 480px) {
+    /* Typography */
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    /* Spacing */
+    .section {
+        padding: 24px 10px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .card {
+        padding: 12px;
+    }
+
+    /* Buttons */
+    button, .btn {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    /* Forms */
+    input, select, textarea {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    /* Age gate */
+    .age-gate-content {
+        padding: 12px;
+    }
+
+    .age-gate-content h2 {
+        font-size: 20px;
+    }
+
+    .age-gate-content p {
+        font-size: 12px;
+    }
+
+    /* Balance display */
+    .balance-display {
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+
+    .balance-amount {
+        font-size: 14px;
+    }
+
+    .balance-currency {
+        font-size: 14px;
+    }
+
+    /* Compliance banner */
+    .compliance-banner p {
+        font-size: 11px;
+    }
+
+    /* Grid */
+    .grid-2, .grid-3, .grid-4 {
+        gap: 8px;
+    }
+
+    /* Alerts */
+    .alert {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    /* Compliance box */
+    .compliance-box {
+        padding: 8px;
+        margin: 8px 0;
+    }
+
+    .compliance-box h3 {
+        font-size: 14px;
+    }
+
+    .compliance-box p {
+        font-size: 12px;
+    }
+}
+
+/* ============================================
+   LANDSCAPE ORIENTATION
+   ============================================ */
+
+@media (max-height: 600px) and (orientation: landscape) {
+    .section {
+        padding: 24px 16px;
+    }
+
+    .card {
+        padding: 12px;
+    }
+
+    h1 {
+        margin-bottom: 8px;
+    }
+
+    h2 {
+        margin-bottom: 8px;
+    }
+
+    p {
+        margin-bottom: 8px;
+    }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+    /* Hide interactive elements */
+    .header,
+    .compliance-banner,
+    .nav,
+    .balance-display,
+    button,
+    .btn,
+    .nav-toggle,
+    .no-print {
+        display: none !important;
+    }
+
+    /* Print-friendly colors */
+    body {
+        background: white;
+        color: black;
+    }
+
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+
+    h1, h2, h3 {
+        color: black;
+        page-break-after: avoid;
+    }
+
+    p {
+        page-break-inside: avoid;
+    }
+
+    /* Page breaks */
+    .section {
+        page-break-inside: avoid;
+    }
+
+    .card {
+        page-break-inside: avoid;
+        border: 1px solid black;
+    }
+
+    /* Margins for printing */
+    .container {
+        max-width: 100%;
+    }
+}
+
+/* ============================================
+   HIGH DPI DISPLAYS (Retina)
+   ============================================ */
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Optimize for high DPI displays */
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    button, .btn {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+}
+
+/* ============================================
+   DARK MODE SUPPORT
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+    /* Already using dark theme by default */
+}
+
+@media (prefers-color-scheme: light) {
+    /* Optional light mode support */
+    body {
+        background: #f5f5f5;
+        color: #333;
+    }
+
+    .card {
+        background: white;
+        border-color: #ddd;
+    }
+
+    input, select, textarea {
+        background: white;
+        border-color: #ddd;
+        color: #333;
+    }
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ============================================
+   FORCED COLORS MODE
+   ============================================ */
+
+@media (forced-colors: active) {
+    .card {
+        border: 2px solid CanvasText;
+    }
+
+    button, .btn {
+        border: 2px solid ButtonText;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}

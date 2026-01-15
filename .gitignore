@@ -1,0 +1,45 @@
+# PHP
+*.php~
+*.phtml
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.buildpath
+.settings/
+
+# OS
+Thumbs.db
+.DS_Store
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Cache
+cache/
+.cache/
+
+# Dependencies
+vendor/
+node_modules/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build
+dist/
+build/
+
+# Testing
+coverage/
+.phpunit.result.cache
