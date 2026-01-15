@@ -3,8 +3,8 @@ require_once '../includes/config.php';
 $page_title = "Chicken Game";
 include '../includes/header.php';
 ?>
-<link rel="stylesheet" href="../assets/css/toast.css">
-<script src="../assets/js/toast.js"></script>
+<link rel="stylesheet" href="..../assets/css/toast.css">
+<script src="..../assets/js/toast.js"></script>
 
 <style>
     /* Game Container - Single Screen Layout */

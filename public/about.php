@@ -259,7 +259,7 @@ include '../includes/header.php';
                 </p>
             </div>
             <div class="about-image">
-                <img src="/assets/images/hero-casino.png" alt="About Us">
+                <img src="../assets/images/hero-casino.png" alt="About Us">
             </div>
         </div>
 

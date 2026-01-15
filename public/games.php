@@ -216,7 +216,7 @@ include '../includes/header.php';
             <!-- Chicken Game -->
             <div class="game-card" data-category="strategy">
                 <div class="game-card-image">
-                    <img src="/assets/images/feature_entertainment.png" alt="Chicken Game">
+                    <img src="../assets/images/feature_entertainment.png" alt="Chicken Game">
                     <div class="game-card-overlay">
                         <span style="color: #ffd700; font-weight: bold;">Click to Play →</span>
                     </div>
@@ -241,7 +241,7 @@ include '../includes/header.php';
             <!-- Dice Game -->
             <div class="game-card" data-category="quick lucky">
                 <div class="game-card-image">
-                    <img src="/assets/images/professional_games.webp" alt="Dice Game">
+                    <img src="../assets/images/professional_games.webp" alt="Dice Game">
                     <div class="game-card-overlay">
                         <span style="color: #ffd700; font-weight: bold;">Click to Play →</span>
                     </div>
@@ -266,7 +266,7 @@ include '../includes/header.php';
             <!-- Mines Game -->
             <div class="game-card" data-category="strategy">
                 <div class="game-card-image">
-                    <img src="/assets/images/slots-game.png" alt="Mines Game">
+                    <img src="../assets/images/slots-game.png" alt="Mines Game">
                     <div class="game-card-overlay">
                         <span style="color: #ffd700; font-weight: bold;">Click to Play →</span>
                     </div>
@@ -291,7 +291,7 @@ include '../includes/header.php';
             <!-- Plinko Game -->
             <div class="game-card" data-category="quick lucky">
                 <div class="game-card-image">
-                    <img src="/assets/images/slots-game-bg.png" alt="Plinko Game">
+                    <img src="../assets/images/slots-game-bg.png" alt="Plinko Game">
                     <div class="game-card-overlay">
                         <span style="color: #ffd700; font-weight: bold;">Click to Play →</span>
                     </div>

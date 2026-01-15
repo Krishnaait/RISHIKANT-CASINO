@@ -7,7 +7,7 @@ include '../includes/header.php';
     /* Hero Section */
     .hero {
         background: linear-gradient(135deg, rgba(26, 10, 46, 0.9) 0%, rgba(45, 27, 78, 0.9) 50%, rgba(26, 10, 46, 0.9) 100%),
-                    url('/assets/images/hero-banner.webp') center/cover;
+                    url('../assets/images/hero-banner.webp') center/cover;
         background-attachment: fixed;
         min-height: 600px;
         display: flex;
@@ -345,7 +345,7 @@ include '../includes/header.php';
         <!-- Chicken Game -->
         <div class="game-card">
             <div class="game-card-image">
-                <img src="/assets/images/feature_entertainment.png" alt="Chicken Game">
+                <img src="../assets/images/feature_entertainment.png" alt="Chicken Game">
             </div>
             <div class="game-card-content">
                 <span class="game-card-badge">🎮 Free-to-Play</span>
@@ -363,7 +363,7 @@ include '../includes/header.php';
         <!-- Dice Game -->
         <div class="game-card">
             <div class="game-card-image">
-                <img src="/assets/images/professional_games.webp" alt="Dice Game">
+                <img src="../assets/images/professional_games.webp" alt="Dice Game">
             </div>
             <div class="game-card-content">
                 <span class="game-card-badge">🎮 Free-to-Play</span>
@@ -381,7 +381,7 @@ include '../includes/header.php';
         <!-- Mines Game -->
         <div class="game-card">
             <div class="game-card-image">
-                <img src="/assets/images/slots-game.png" alt="Mines Game">
+                <img src="../assets/images/slots-game.png" alt="Mines Game">
             </div>
             <div class="game-card-content">
                 <span class="game-card-badge">🎮 Free-to-Play</span>
@@ -399,7 +399,7 @@ include '../includes/header.php';
         <!-- Plinko Game -->
         <div class="game-card">
             <div class="game-card-image">
-                <img src="/assets/images/slots-game-bg.png" alt="Plinko Game">
+                <img src="../assets/images/slots-game-bg.png" alt="Plinko Game">
             </div>
             <div class="game-card-content">
                 <span class="game-card-badge">🎮 Free-to-Play</span>

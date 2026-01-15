@@ -111,10 +111,10 @@
     </footer>
 
     <!-- Stylesheets for Footer -->
-    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
 
     <!-- Scripts -->
-    <script src="/assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 
     <!-- Close HTML -->
 </body>
