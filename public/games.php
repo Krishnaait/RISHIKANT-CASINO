@@ -32,18 +32,20 @@ include '../includes/header.php';
     .game-card {
         background: rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 215, 0, 0.2);
+        border: 3px dashed rgba(255, 215, 0, 0.3);
         border-radius: 16px;
         overflow: hidden;
         transition: all 0.3s ease;
         display: flex;
         flex-direction: column;
+        position: relative;
     }
 
     .game-card:hover {
-        transform: translateY(-8px);
-        border-color: rgba(255, 215, 0, 0.5);
-        box-shadow: 0 12px 48px rgba(255, 215, 0, 0.2);
+        transform: translateY(-10px) scale(1.02);
+        border-color: rgba(255, 215, 0, 0.8);
+        box-shadow: 0 15px 50px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 215, 0, 0.3);
+        background: rgba(255, 215, 0, 0.05);
     }
 
     .game-card-image {
@@ -123,17 +125,19 @@ include '../includes/header.php';
         padding: 12px;
         background: linear-gradient(135deg, #ffd700, #ffed4e);
         color: #1a0a2e;
-        border: none;
+        border: 3px dashed rgba(255, 215, 0, 0.8);
         border-radius: 8px;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 14px;
         cursor: pointer;
         transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
     }
 
     .game-card-button:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 5px 20px rgba(255, 215, 0, 0.4);
+        transform: translateY(-2px) scale(1.05);
+        box-shadow: 0 8px 30px rgba(255, 215, 0, 0.6), 0 0 30px rgba(255, 215, 0, 0.4);
     }
 
     .game-card-button:active {
